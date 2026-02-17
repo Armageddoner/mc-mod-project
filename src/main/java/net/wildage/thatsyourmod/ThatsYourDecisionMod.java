@@ -89,6 +89,7 @@ public class ThatsYourDecisionMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COGITO);
+            event.accept(ModItems.Enkephalin);
         }
     }
 
