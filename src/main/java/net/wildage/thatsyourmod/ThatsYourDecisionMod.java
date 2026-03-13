@@ -3,6 +3,7 @@ package net.wildage.thatsyourmod;
 import net.wildage.thatsyourmod.block.ModBlocks;
 import net.wildage.thatsyourmod.item.ModCreativeModTabs;
 import net.wildage.thatsyourmod.item.ModItems;
+import net.wildage.thatsyourmod.menu.ModMenus;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -32,6 +33,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(ThatsYourDecisionMod.MODID)
@@ -79,6 +81,7 @@ public class ThatsYourDecisionMod {
         ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModMenus.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 

@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/grindstone",
+  "textures": {
+    "pivot": "thatsyourdecisionllc:block/reinforced_grindstone_pivot",
+    "round": "thatsyourdecisionllc:block/reinforced_grindstone_round",
+    "side": "thatsyourdecisionllc:block/reinforced_grindstone_side",
+    "particle": "thatsyourdecisionllc:block/reinforced_grindstone_side",
+    "leg": "minecraft:block/dark_oak_log"
+  }
+}

@@ -31,6 +31,7 @@ public class ModCreativeModTabs {
             .title(Component.translatable("creativetab.thatsyourdecisionllc.thats_your_blocks"))
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModBlocks.EPSTEIN_BLOCK);
+                output.accept(ModBlocks.REINFORCED_GRINDSTONE);
             })
             .build());
 
