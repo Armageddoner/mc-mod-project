@@ -20,6 +20,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> EPSTEIN_BLOCK = registerBlock("epstein_block", () -> new Block(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.ANVIL)));
     public static final DeferredBlock<Block> REINFORCED_GRINDSTONE = registerBlock("reinforced_grindstone", () -> new ReinforcedGrindstone(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
+    public static final DeferredBlock<Block> REINFORCED_ANVIL = registerBlock("reinforced_anvil");
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
