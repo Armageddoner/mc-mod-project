@@ -102,6 +102,8 @@ public class ThatsYourDecisionMod {
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.EPSTEIN_BLOCK);
+            event.accept(ModBlocks.REINFORCED_GRINDSTONE);
+            event.accept(ModBlocks.REINFORCED_ANVIL);
         }
     }
 
