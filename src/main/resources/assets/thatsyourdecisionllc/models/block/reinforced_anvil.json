@@ -1,7 +1,7 @@
 
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/anvil",
   "textures": {
-    "all": "thatsyourdecisionllc:block/epstein_block"
+    "top": "thatsyourdecisionllc:block/reinforced_anvil_top"
   }
 }
