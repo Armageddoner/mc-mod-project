@@ -19,6 +19,11 @@ public class ModMenus {
             MENUS.register("reinforced_grindstone_menu",
                     () -> new MenuType<>(ReinforcedGrindstoneMenu::new, FeatureFlags.DEFAULT_FLAGS));
 
+    public static final DeferredHolder<MenuType<?>, MenuType<ReinforcedAnvilMenu>> REINFORCED_ANVIL_MENU =
+            MENUS.register("reinforced_anvil_menu",
+                    () -> new MenuType<>(ReinforcedAnvilMenu::new, FeatureFlags.DEFAULT_FLAGS));
+
+
     public static void register(IEventBus eventBus) {
         MENUS.register(eventBus);
     }
