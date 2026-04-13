@@ -1,6 +1,7 @@
 package net.wildage.thatsyourmod.mixin.client;
 
 import net.minecraft.client.gui.screens.inventory.AnvilScreen;
+import net.wildage.thatsyourmod.client.screen.ReinforcedAnvilScreen;
 import net.wildage.thatsyourmod.menu.ReinforcedAnvilMenu;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.Constant;
@@ -16,7 +17,7 @@ public class AnvilScreenMixin {
     @ModifyConstant(method = "renderLabels", constant = @Constant(intValue = 40))
     private int reinforcedAnvil$removeUITextCap(int originalLimit) {
         // Optional: Ensure this only applies to your custom screen if you made one:
-         if (!((Object) this instanceof ReinforcedAnvilMenu)) {
+         if (!((Object) this instanceof ReinforcedAnvilScreen)) {
              return originalLimit;
          }
 
