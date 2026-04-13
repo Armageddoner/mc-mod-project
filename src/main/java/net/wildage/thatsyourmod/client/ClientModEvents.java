@@ -1,5 +1,6 @@
 package net.wildage.thatsyourmod.client;
 
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
@@ -11,7 +12,7 @@ import net.wildage.thatsyourmod.menu.ModMenus;
 import net.wildage.thatsyourmod.client.screen.ReinforcedGrindstoneScreen;
 import net.wildage.thatsyourmod.menu.ReinforcedAnvilMenu;
 
-@EventBusSubscriber(modid = ThatsYourDecisionMod.MODID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = ThatsYourDecisionMod.MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ClientModEvents {
 
     @SubscribeEvent
