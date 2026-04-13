@@ -1,0 +1,7 @@
+
+{
+  "parent": "minecraft:block/anvil",
+  "textures": {
+    "top": "thatsyourdecisionllc:block/reinforced_anvil_top"
+  }
+}
