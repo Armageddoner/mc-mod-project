@@ -32,6 +32,7 @@ public class ModCreativeModTabs {
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModBlocks.EPSTEIN_BLOCK);
                 output.accept(ModBlocks.REINFORCED_GRINDSTONE);
+                output.accept(ModBlocks.REINFORCED_ANVIL);
             })
             .build());
 
