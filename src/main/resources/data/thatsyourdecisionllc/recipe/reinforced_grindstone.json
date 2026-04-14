@@ -6,19 +6,25 @@
       "item": "minecraft:redstone"
     },
     "I": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:iron_block"
     },
     "G": {
       "item": "minecraft:grindstone"
     },
-    "pattern": [
-      " R ",
-      "IGI",
-      " R "
-    ],
-    "result": {
-      "count": 1,
-      "id": "thatsyourdecisionllc:reinforced_grindstone"
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
     }
+  },
+  "pattern": [
+      "iRi",
+      "DGD",
+      "IRI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "thatsyourdecisionllc:reinforced_grindstone"
   }
 }
