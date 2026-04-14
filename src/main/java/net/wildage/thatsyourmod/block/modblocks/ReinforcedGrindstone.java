@@ -10,6 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.GrindstoneBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.SimpleMenuProvider;
+import net.wildage.thatsyourmod.menu.ReinforcedGrindstoneMenu;
 
 public class ReinforcedGrindstone extends GrindstoneBlock {
 
@@ -20,7 +21,7 @@ public class ReinforcedGrindstone extends GrindstoneBlock {
     @Override
     protected MenuProvider getMenuProvider(BlockState state, Level level, BlockPos pos) {
         return new SimpleMenuProvider(
-                (id, inventory, player) -> new GrindstoneMenu(id, inventory),
+                (id, inventory, player) -> new ReinforcedGrindstoneMenu(id, inventory),
                 Component.translatable("Reinforced Grindstone")
         );
     }
