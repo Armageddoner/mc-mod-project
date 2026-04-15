@@ -21,7 +21,23 @@ public class ModCreativeModTabs {
             .title(Component.translatable("creativetab.thatsyourdecisionllc.thats_your_items"))
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModItems.COGITO);
-                output.accept(ModItems.Enkephalin);
+                output.accept(ModItems.ENKEPHALIN);
+                output.accept(ModItems.BABY_HEART);
+                output.accept(ModItems.BABY_POWDER);
+                output.accept(ModItems.DIDDY_DANDELION);
+                output.accept(ModItems.BABY_OIL);
+                output.accept(ModItems.RAW_DIDDIUM);
+            })
+            .build());
+
+    public static final Supplier<CreativeModeTab> THATS_YOUR_EQUIPMENT_TAB = CREATIVE_MODE_TAB.register("thats_your_equipment_tab", () -> CreativeModeTab.builder()
+            .icon(()-> new ItemStack(ModItems.DIDDIUM_CHESTPLATE.get()))
+            .title(Component.translatable("creativetab.thatsyourdecisionllc.thats_your_equipment"))
+            .displayItems((itemDisplayParameters, output) -> {
+                output.accept(ModItems.DIDDIUM_HELMET);
+                output.accept(ModItems.DIDDIUM_CHESTPLATE);
+                output.accept(ModItems.DIDDIUM_LEGGINGS);
+                output.accept(ModItems.DIDDIUM_BOOTS);
             })
             .build());
 
@@ -33,6 +49,8 @@ public class ModCreativeModTabs {
                 output.accept(ModBlocks.EPSTEIN_BLOCK);
                 output.accept(ModBlocks.REINFORCED_GRINDSTONE);
                 output.accept(ModBlocks.REINFORCED_ANVIL);
+                output.accept(ModBlocks.DIDDIUM_ORE);
+                output.accept(ModBlocks.DEEPSLATE_DIDDIUM_ORE);
             })
             .build());
 

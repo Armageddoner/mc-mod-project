@@ -1,11 +1,24 @@
 {
   "item.thatsyourdecisionllc.cogito": "Cogito",
   "item.thatsyourdecisionllc.enkephalin": "Enkephalin",
+  "item.thatsyourdecisionllc.baby_heart": "Baby Heart",
+  "item.thatsyourdecisionllc.baby_powder": "Baby Powder",
+  "item.thatsyourdecisionllc.diddy_dandelion": "Diddy Dandelion",
+  "item.thatsyourdecisionllc.baby_oil": "Baby Oil",
+  "item.thatsyourdecisionllc.raw_diddium": "Raw Diddium",
+
+  "item.thatsyourdecisionllc.diddium_helmet": "Diddium Helmet",
+  "item.thatsyourdecisionllc.diddium_chestplate": "Diddium Chestplate",
+  "item.thatsyourdecisionllc.diddium_leggings": "Diddium Leggings",
+  "item.thatsyourdecisionllc.diddium_boots": "Diddium Boots",
 
   "block.thatsyourdecisionllc.epstein_block": "Block of Epstein",
   "block.thatsyourdecisionllc.reinforced_grindstone": "Reinforced Grindstone",
   "block.thatsyourdecisionllc.reinforced_anvil": "Reinforced Anvil",
+  "block.thatsyourdecisionllc.diddium_ore": "Diddium Ore",
+  "block.thatsyourdecisionllc.deepslate_diddium_ore": "Deepslate Diddium Ore",
 
   "creativetab.thatsyourdecisionllc.thats_your_blocks": "That's Your Blocks",
-  "creativetab.thatsyourdecisionllc.thats_your_items": "That's Your Items"
+  "creativetab.thatsyourdecisionllc.thats_your_items": "That's Your Items",
+  "creativetab.thatsyourdecisionllc.thats_your_equipment": "That's Your Equipment"
 }

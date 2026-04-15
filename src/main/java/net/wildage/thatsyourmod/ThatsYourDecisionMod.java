@@ -1,6 +1,9 @@
 package net.wildage.thatsyourmod;
 
 import net.wildage.thatsyourmod.block.ModBlocks;
+import net.wildage.thatsyourmod.events.BabyPowderEvents;
+import net.wildage.thatsyourmod.events.ModEvents;
+import net.wildage.thatsyourmod.events.SteinletEvents;
 import net.wildage.thatsyourmod.item.ModCreativeModTabs;
 import net.wildage.thatsyourmod.item.ModItems;
 import net.wildage.thatsyourmod.menu.ModMenus;
@@ -85,6 +88,10 @@ public class ThatsYourDecisionMod {
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
+        NeoForge.EVENT_BUS.register(ModEvents.class);
+        NeoForge.EVENT_BUS.register(SteinletEvents.class);
+        NeoForge.EVENT_BUS.register(BabyPowderEvents.class);
+
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -97,13 +104,15 @@ public class ThatsYourDecisionMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COGITO);
-            event.accept(ModItems.Enkephalin);
+            event.accept(ModItems.ENKEPHALIN);
+            event.accept(ModItems.DIDDY_DANDELION);
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.EPSTEIN_BLOCK);
             event.accept(ModBlocks.REINFORCED_GRINDSTONE);
             event.accept(ModBlocks.REINFORCED_ANVIL);
+            event.accept(ModBlocks.DIDDIUM_ORE);
         }
     }
 
