@@ -1,16 +1,23 @@
 {
   "item.thatsyourdecisionllc.cogito": "Cogito",
   "item.thatsyourdecisionllc.enkephalin": "Enkephalin",
-  "item.thatsyourdecisionllc.baby_heart": "Baby Heart",
+  "item.thatsyourdecisionllc.steinlet_heart": "Steinlet Heart",
   "item.thatsyourdecisionllc.baby_powder": "Baby Powder",
   "item.thatsyourdecisionllc.diddy_dandelion": "Diddy Dandelion",
   "item.thatsyourdecisionllc.baby_oil": "Baby Oil",
   "item.thatsyourdecisionllc.raw_diddium": "Raw Diddium",
+  "item.thatsyourdecisionllc.diddium_ingot": "Diddium Ingot",
 
   "item.thatsyourdecisionllc.diddium_helmet": "Diddium Helmet",
   "item.thatsyourdecisionllc.diddium_chestplate": "Diddium Chestplate",
   "item.thatsyourdecisionllc.diddium_leggings": "Diddium Leggings",
   "item.thatsyourdecisionllc.diddium_boots": "Diddium Boots",
+
+  "item.thatsyourdecisionllc.diddium_pickaxe": "Diddium Pickaxe",
+  "item.thatsyourdecisionllc.diddium_axe": "Diddium Axe",
+  "item.thatsyourdecisionllc.diddium_sword": "Diddium Sword",
+  "item.thatsyourdecisionllc.diddium_shovel": "Diddium Shovel",
+  "item.thatsyourdecisionllc.diddium_hoe": "Diddium Hoe",
 
   "block.thatsyourdecisionllc.epstein_block": "Block of Epstein",
   "block.thatsyourdecisionllc.reinforced_grindstone": "Reinforced Grindstone",

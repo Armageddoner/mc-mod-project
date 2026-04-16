@@ -21,7 +21,7 @@ public class ModEvents {
                         event.getEntity().getX(),
                         event.getEntity().getY(),
                         event.getEntity().getZ(),
-                        new ItemStack(ModItems.BABY_HEART.get())
+                        new ItemStack(ModItems.STEINLET_HEART.get())
                 )
         );
     }

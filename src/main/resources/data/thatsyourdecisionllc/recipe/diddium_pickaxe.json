@@ -4,15 +4,18 @@
   "key": {
     "D": {
       "item": "thatsyourdecisionllc:diddium_ingot"
+    },
+    "B": {
+      "item": "thatsyourdecisionllc:baby_oil"
     }
   },
   "pattern": [
     "DDD",
-    "D D",
-    "D D"
+    " B ",
+    " B "
   ],
   "result": {
     "count": 1,
-    "id": "thatsyourdecisionllc:diddium_leggings"
+    "id": "thatsyourdecisionllc:diddium_pickaxe"
   }
 }

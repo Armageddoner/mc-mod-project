@@ -22,11 +22,12 @@ public class ModCreativeModTabs {
             .displayItems((itemDisplayParameters, output) -> {
                 output.accept(ModItems.COGITO);
                 output.accept(ModItems.ENKEPHALIN);
-                output.accept(ModItems.BABY_HEART);
+                output.accept(ModItems.STEINLET_HEART);
                 output.accept(ModItems.BABY_POWDER);
                 output.accept(ModItems.DIDDY_DANDELION);
                 output.accept(ModItems.BABY_OIL);
                 output.accept(ModItems.RAW_DIDDIUM);
+                output.accept(ModItems.DIDDIUM_INGOT);
             })
             .build());
 
@@ -38,6 +39,11 @@ public class ModCreativeModTabs {
                 output.accept(ModItems.DIDDIUM_CHESTPLATE);
                 output.accept(ModItems.DIDDIUM_LEGGINGS);
                 output.accept(ModItems.DIDDIUM_BOOTS);
+                output.accept(ModItems.DIDDIUM_PICKAXE);
+                output.accept(ModItems.DIDDIUM_SHOVEL);
+                output.accept(ModItems.DIDDIUM_AXE);
+                output.accept(ModItems.DIDDIUM_SWORD);
+                output.accept(ModItems.DIDDIUM_HOE);
             })
             .build());
 

@@ -2,6 +2,7 @@ package net.wildage.thatsyourmod;
 
 import net.wildage.thatsyourmod.block.ModBlocks;
 import net.wildage.thatsyourmod.events.BabyPowderEvents;
+import net.wildage.thatsyourmod.events.ItemSlideEvents;
 import net.wildage.thatsyourmod.events.ModEvents;
 import net.wildage.thatsyourmod.events.SteinletEvents;
 import net.wildage.thatsyourmod.item.ModCreativeModTabs;
@@ -91,6 +92,7 @@ public class ThatsYourDecisionMod {
         NeoForge.EVENT_BUS.register(ModEvents.class);
         NeoForge.EVENT_BUS.register(SteinletEvents.class);
         NeoForge.EVENT_BUS.register(BabyPowderEvents.class);
+        NeoForge.EVENT_BUS.register(ItemSlideEvents.class);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
