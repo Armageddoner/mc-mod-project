@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "thatsyourdecisionllc:item/diddium_hoe"
+    "layer0": "thatsyourdecisionllc:item/regreium_pickaxe"
   }
 }

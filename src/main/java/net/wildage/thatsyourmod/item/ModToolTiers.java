@@ -3,12 +3,11 @@ package net.wildage.thatsyourmod.item;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 
 public class ModToolTiers {
 
-    public static final Tier DIDDIUM = new Tier() {
+    public static final Tier REGREIUM = new Tier() {
 
         @Override
         public int getUses() {
@@ -41,7 +40,7 @@ public class ModToolTiers {
 
         @Override
         public Ingredient getRepairIngredient() {
-            return Ingredient.of(ModItems.DIDDIUM_INGOT.get());
+            return Ingredient.of(ModItems.REGREIUM_INGOT.get());
         }
     };
 }

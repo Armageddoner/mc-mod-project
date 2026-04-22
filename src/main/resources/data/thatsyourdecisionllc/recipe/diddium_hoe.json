@@ -3,10 +3,10 @@
   "category": "equipment",
   "key": {
     "D": {
-      "item": "thatsyourdecisionllc:diddium_ingot"
+      "item": "thatsyourdecisionllc:regreium_ingot"
     },
     "B": {
-      "item": "thatsyourdecisionllc:baby_oil"
+      "item": "thatsyourdecisionllc:dwarven_essence"
     }
   },
   "pattern": [
@@ -16,6 +16,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "thatsyourdecisionllc:diddium_hoe"
+    "id": "thatsyourdecisionllc:regreium_hoe"
   }
 }

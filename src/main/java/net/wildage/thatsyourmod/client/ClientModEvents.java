@@ -1,14 +1,8 @@
 package net.wildage.thatsyourmod.client;
 
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.entity.VillagerRenderer;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 
 import net.wildage.thatsyourmod.ThatsYourDecisionMod;
