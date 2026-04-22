@@ -4,8 +4,10 @@ import net.wildage.thatsyourmod.block.ModBlocks;
 import net.wildage.thatsyourmod.events.DwarvenEssenceEvents;
 import net.wildage.thatsyourmod.events.ModEvents;
 import net.wildage.thatsyourmod.events.DwarfEvents;
+import net.wildage.thatsyourmod.item.ModArmorMaterials;
 import net.wildage.thatsyourmod.item.ModCreativeModTabs;
 import net.wildage.thatsyourmod.item.ModItems;
+import net.wildage.thatsyourmod.item.RegreiumBoots;
 import net.wildage.thatsyourmod.menu.ModMenus;
 import org.slf4j.Logger;
 
@@ -83,6 +85,8 @@ public class ThatsYourDecisionMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModMenus.register(modEventBus);
+        ModArmorMaterials.ARMOR_MATERIALS.register(modEventBus);
+        RegreiumBoots.ITEMS.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
