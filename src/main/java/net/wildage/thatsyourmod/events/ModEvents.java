@@ -1,15 +1,36 @@
 package net.wildage.thatsyourmod.events;
 
+import net.minecraft.world.entity.npc.Villager;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.neoforge.event.entity.living.LivingDropsEvent;
+import net.wildage.thatsyourmod.item.ModItems;
 import net.neoforged.neoforge.event.entity.living.LivingFallEvent;
 import net.wildage.thatsyourmod.item.RegreiumBoots;
 
 public class ModEvents {
 
     @SubscribeEvent
-    public void onFall(LivingFallEvent event) {
+    public static void onVillagerDeath(LivingDropsEvent event) {
+
+        if (!(event.getEntity() instanceof Villager villager)) return;
+
+        if (!villager.getPersistentData().getBoolean("dwarf")) return;
+
+        event.getDrops().add(
+                new net.minecraft.world.entity.item.ItemEntity(
+                        event.getEntity().level(),
+                        event.getEntity().getX(),
+                        event.getEntity().getY(),
+                        event.getEntity().getZ(),
+                        new ItemStack(ModItems.DWARF_HEART.get())
+                )
+        );
+    }
+    @SubscribeEvent
+    public static void onFall(LivingFallEvent event) {
 
         if (!(event.getEntity() instanceof Player player)) return;
 
@@ -97,4 +118,6 @@ public class ModEvents {
 
         }
     }
+
+
 }

@@ -1,6 +1,9 @@
 package net.wildage.thatsyourmod;
 
 import net.wildage.thatsyourmod.block.ModBlocks;
+import net.wildage.thatsyourmod.events.DwarvenEssenceEvents;
+import net.wildage.thatsyourmod.events.ModEvents;
+import net.wildage.thatsyourmod.events.DwarfEvents;
 import net.wildage.thatsyourmod.item.ModArmorMaterials;
 import net.wildage.thatsyourmod.item.ModCreativeModTabs;
 import net.wildage.thatsyourmod.item.ModItems;
@@ -77,7 +80,6 @@ public class ThatsYourDecisionMod {
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
-        NeoForge.EVENT_BUS.register(new ModEvents());
         ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
@@ -86,6 +88,10 @@ public class ThatsYourDecisionMod {
         RegreiumBoots.ITEMS.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
+        NeoForge.EVENT_BUS.register(ModEvents.class);
+        NeoForge.EVENT_BUS.register(DwarfEvents.class);
+        NeoForge.EVENT_BUS.register(DwarvenEssenceEvents.class);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -99,13 +105,15 @@ public class ThatsYourDecisionMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COGITO);
-            event.accept(ModItems.Enkephalin);
+            event.accept(ModItems.ENKEPHALIN);
+            event.accept(ModItems.DWARVEN_APPLE);
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.EPSTEIN_BLOCK);
             event.accept(ModBlocks.REINFORCED_GRINDSTONE);
             event.accept(ModBlocks.REINFORCED_ANVIL);
+            event.accept(ModBlocks.REGREIUM_ORE);
         }
     }
 

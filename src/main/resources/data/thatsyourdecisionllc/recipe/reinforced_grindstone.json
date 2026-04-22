@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    },
+    "G": {
+      "item": "minecraft:grindstone"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+      "iRi",
+      "DGD",
+      "IRI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "thatsyourdecisionllc:reinforced_grindstone"
+  }
+}

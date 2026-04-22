@@ -2,11 +2,35 @@
   "item.thatsyourdecisionllc.cogito": "Cogito",
   "item.thatsyourdecisionllc.enkephalin": "Enkephalin",
 
+  "item.thatsyourdecisionllc.dwarvenium": "Dwarvenium",
+  "item.thatsyourdecisionllc.dwarven_apple": "Dwarven Apple",
+  "item.thatsyourdecisionllc.dwarf_heart": "Dwarf Heart",
+  "item.thatsyourdecisionllc.dwarven_essence": "Dwarven Essence",
+
+  "block.thatsyourdecisionllc.regreium_ore": "Regreium Ore",
+  "block.thatsyourdecisionllc.deepslate_regreium_ore": "Deepslate Regreium Ore",
+  "item.thatsyourdecisionllc.raw_regreium": "Raw Regreium",
+  "item.thatsyourdecisionllc.regreium_ingot": "Regreium Ingot",
+
+  "item.thatsyourdecisionllc.regreium_helmet": "Regreium Helmet",
+  "item.thatsyourdecisionllc.regreium_chestplate": "Regreium Chestplate",
+  "item.thatsyourdecisionllc.regreium_leggings": "Regreium Leggings",
+  "item.thatsyourdecisionllc.regreium_boots": "Regreium Boots",
+
+  "item.thatsyourdecisionllc.regreium_pickaxe": "Regreium Pickaxe",
+  "item.thatsyourdecisionllc.regreium_axe": "Regreium Axe",
+  "item.thatsyourdecisionllc.regreium_sword": "Regreium Sword",
+  "item.thatsyourdecisionllc.regreium_shovel": "Regreium Shovel",
+  "item.thatsyourdecisionllc.regreium_hoe": "Regreium Hoe",
+
   "block.thatsyourdecisionllc.epstein_block": "Block of Epstein",
   "block.thatsyourdecisionllc.reinforced_grindstone": "Reinforced Grindstone",
   "block.thatsyourdecisionllc.reinforced_anvil": "Reinforced Anvil",
 
+  "creativetab.thatsyourdecisionllc.thats_your_functional_blocks": "That's Your Functional Blocks",
   "creativetab.thatsyourdecisionllc.thats_your_blocks": "That's Your Blocks",
   "creativetab.thatsyourdecisionllc.thats_your_items": "That's Your Items",
-  "item.thatsyourdecisionllc.regreium_boots": "Regreium Boots"
+  "creativetab.thatsyourdecisionllc.thats_your_ingredients": "That's Your Ingredients",
+  "creativetab.thatsyourdecisionllc.thats_your_tools": "That's Your Tools",
+  "creativetab.thatsyourdecisionllc.thats_your_combat": "That's Your Combat"
 }
