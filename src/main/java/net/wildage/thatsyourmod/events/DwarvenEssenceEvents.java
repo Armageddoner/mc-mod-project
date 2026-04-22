@@ -12,7 +12,7 @@ import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.wildage.thatsyourmod.block.ModBlocks;
 import net.wildage.thatsyourmod.item.ModItems;
 
-public class BabyPowderEvents {
+public class DwarvenEssenceEvents {
 
     @SubscribeEvent
     public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
@@ -24,7 +24,7 @@ public class BabyPowderEvents {
 
         if (level.isClientSide()) return;
 
-        if (!held.is(ModItems.BABY_POWDER.get())) return;
+        if (!held.is(ModItems.DWARVEN_ESSENCE.get())) return;
 
         BlockState clickedState = level.getBlockState(origin);
 
@@ -41,7 +41,7 @@ public class BabyPowderEvents {
 
             if (isIronOre(state)) {
                 level.setBlock(pos,
-                        ModBlocks.DIDDIUM_ORE.get().defaultBlockState(),
+                        ModBlocks.REGREIUM_ORE.get().defaultBlockState(),
                         3
                 );
             }

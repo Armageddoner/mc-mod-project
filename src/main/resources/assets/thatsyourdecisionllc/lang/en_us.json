@@ -1,31 +1,36 @@
 {
   "item.thatsyourdecisionllc.cogito": "Cogito",
   "item.thatsyourdecisionllc.enkephalin": "Enkephalin",
-  "item.thatsyourdecisionllc.steinlet_heart": "Steinlet Heart",
-  "item.thatsyourdecisionllc.baby_powder": "Baby Powder",
-  "item.thatsyourdecisionllc.diddy_dandelion": "Diddy Dandelion",
-  "item.thatsyourdecisionllc.baby_oil": "Baby Oil",
-  "item.thatsyourdecisionllc.raw_diddium": "Raw Diddium",
-  "item.thatsyourdecisionllc.diddium_ingot": "Diddium Ingot",
 
-  "item.thatsyourdecisionllc.diddium_helmet": "Diddium Helmet",
-  "item.thatsyourdecisionllc.diddium_chestplate": "Diddium Chestplate",
-  "item.thatsyourdecisionllc.diddium_leggings": "Diddium Leggings",
-  "item.thatsyourdecisionllc.diddium_boots": "Diddium Boots",
+  "item.thatsyourdecisionllc.dwarvenium": "Dwarvenium",
+  "item.thatsyourdecisionllc.dwarven_apple": "Dwarven Apple",
+  "item.thatsyourdecisionllc.dwarf_heart": "Dwarf Heart",
+  "item.thatsyourdecisionllc.dwarven_essence": "Dwarven Essence",
 
-  "item.thatsyourdecisionllc.diddium_pickaxe": "Diddium Pickaxe",
-  "item.thatsyourdecisionllc.diddium_axe": "Diddium Axe",
-  "item.thatsyourdecisionllc.diddium_sword": "Diddium Sword",
-  "item.thatsyourdecisionllc.diddium_shovel": "Diddium Shovel",
-  "item.thatsyourdecisionllc.diddium_hoe": "Diddium Hoe",
+  "block.thatsyourdecisionllc.regreium_ore": "Regreium Ore",
+  "block.thatsyourdecisionllc.deepslate_regreium_ore": "Deepslate Regreium Ore",
+  "item.thatsyourdecisionllc.raw_regreium": "Raw Regreium",
+  "item.thatsyourdecisionllc.regreium_ingot": "Regreium Ingot",
+
+  "item.thatsyourdecisionllc.regreium_helmet": "Regreium Helmet",
+  "item.thatsyourdecisionllc.regreium_chestplate": "Regreium Chestplate",
+  "item.thatsyourdecisionllc.regreium_leggings": "Regreium Leggings",
+  "item.thatsyourdecisionllc.regreium_boots": "Regreium Boots",
+
+  "item.thatsyourdecisionllc.regreium_pickaxe": "Regreium Pickaxe",
+  "item.thatsyourdecisionllc.regreium_axe": "Regreium Axe",
+  "item.thatsyourdecisionllc.regreium_sword": "Regreium Sword",
+  "item.thatsyourdecisionllc.regreium_shovel": "Regreium Shovel",
+  "item.thatsyourdecisionllc.regreium_hoe": "Regreium Hoe",
 
   "block.thatsyourdecisionllc.epstein_block": "Block of Epstein",
   "block.thatsyourdecisionllc.reinforced_grindstone": "Reinforced Grindstone",
   "block.thatsyourdecisionllc.reinforced_anvil": "Reinforced Anvil",
-  "block.thatsyourdecisionllc.diddium_ore": "Diddium Ore",
-  "block.thatsyourdecisionllc.deepslate_diddium_ore": "Deepslate Diddium Ore",
 
+  "creativetab.thatsyourdecisionllc.thats_your_functional_blocks": "That's Your Functional Blocks",
   "creativetab.thatsyourdecisionllc.thats_your_blocks": "That's Your Blocks",
   "creativetab.thatsyourdecisionllc.thats_your_items": "That's Your Items",
-  "creativetab.thatsyourdecisionllc.thats_your_equipment": "That's Your Equipment"
+  "creativetab.thatsyourdecisionllc.thats_your_ingredients": "That's Your Ingredients",
+  "creativetab.thatsyourdecisionllc.thats_your_tools": "That's Your Tools",
+  "creativetab.thatsyourdecisionllc.thats_your_combat": "That's Your Combat"
 }

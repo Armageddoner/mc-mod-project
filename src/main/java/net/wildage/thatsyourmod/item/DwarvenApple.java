@@ -8,9 +8,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
-public class DiddyDandelion extends Item {
+public class DwarvenApple extends Item {
 
-    public DiddyDandelion(Properties properties) {
+    public DwarvenApple(Properties properties) {
         super(properties);
     }
 
@@ -25,9 +25,9 @@ public class DiddyDandelion extends Item {
             return InteractionResult.PASS;
         }
 
-        villager.getPersistentData().putBoolean("steinlet", true);
+        villager.getPersistentData().putBoolean("dwarf", true);
         villager.setBaby(true);
-        villager.setCustomName(Component.literal("Steinlet"));
+        villager.setCustomName(Component.literal("Dwarf"));
 
         return InteractionResult.SUCCESS;
     }

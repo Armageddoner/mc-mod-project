@@ -11,7 +11,7 @@ import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.tick.EntityTickEvent;
 import net.wildage.thatsyourmod.item.ModItems;
 
-public class SteinletEvents {
+public class DwarfEvents {
 
     @SubscribeEvent
     public static void onVillagerInteract(PlayerInteractEvent.EntityInteractSpecific event) {
@@ -25,19 +25,19 @@ public class SteinletEvents {
 
         if (!player.isCrouching()) return;
 
-        if (!player.getItemInHand(event.getHand()).is(ModItems.DIDDY_DANDELION.get())) return;
+        if (!player.getItemInHand(event.getHand()).is(ModItems.DWARVEN_APPLE.get())) return;
 
         // 🚫 Prevent re-conversion
-        if (villager.getPersistentData().getBoolean("steinlet")) return;
+        if (villager.getPersistentData().getBoolean("dwarf")) return;
 
-        // Mark as steinlet
-        villager.getPersistentData().putBoolean("steinlet", true);
+        // Mark as dwarf
+        villager.getPersistentData().putBoolean("dwarf", true);
 
         // Force baby
         villager.setBaby(true);
 
         // Name it
-        villager.setCustomName(Component.literal("Steinlet"));
+        villager.setCustomName(Component.literal("Dwarf"));
         villager.setCustomNameVisible(true);
 
         // Play sound
@@ -64,7 +64,7 @@ public class SteinletEvents {
 
         if (!(event.getEntity() instanceof Villager villager)) return;
 
-        if (!villager.getPersistentData().getBoolean("steinlet")) return;
+        if (!villager.getPersistentData().getBoolean("dwarf")) return;
 
         // Force baby state
         if (!villager.isBaby()) {

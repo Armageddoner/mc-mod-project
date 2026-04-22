@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "thatsyourdecisionllc:item/baby_oil"
+    "layer0": "thatsyourdecisionllc:item/dwarven_essence"
   }
 }
