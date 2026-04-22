@@ -1,4 +1,4 @@
-package net.wildage.thatsyourmod.event;
+package net.wildage.thatsyourmod.events;
 
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
