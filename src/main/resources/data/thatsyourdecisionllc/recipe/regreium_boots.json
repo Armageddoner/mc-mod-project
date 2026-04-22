@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "D": {
-      "item": "thatsyourdecisionllc:diddium_ingot"
+    "R": {
+      "item": "thatsyourdecisionllc:regreium_ingot"
     }
   },
   "pattern": [
-    "D D",
-    "D D"
+    "R R",
+    "R R"
   ],
   "result": {
     "count": 1,
-    "id": "thatsyourdecisionllc:diddium_boots"
+    "id": "thatsyourdecisionllc:regreium_boots"
   }
 }

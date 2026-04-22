@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class ModArmorMaterials {
 
-    public static final ArmorMaterial DIDDIUM = new ArmorMaterial(
+    public static final ArmorMaterial REGREIUM = new ArmorMaterial(
             Map.of(
                     Type.BOOTS, 2,
                     Type.LEGGINGS, 5,
@@ -25,7 +25,7 @@ public class ModArmorMaterials {
 
             List.of(
                     new ArmorMaterial.Layer(
-                            ResourceLocation.fromNamespaceAndPath("thatsyourdecisionllc", "diddium")
+                            ResourceLocation.fromNamespaceAndPath("thatsyourdecisionllc", "regreium")
                     )
             ),
 
