@@ -43,4 +43,4 @@ public class ModToolTiers {
             return Ingredient.of(ModItems.REGREIUM_INGOT.get());
         }
     };
-}
+} // comment
