@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "thatsyourdecisionllc:regreium_ingot"
+    },
+    "B": {
+      "item": "thatsyourdecisionllc:dwarven_essence"
+    }
+  },
+  "pattern": [
+    "D",
+    "D",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "thatsyourdecisionllc:regreium_sword"
+  }
+}

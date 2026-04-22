@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "thatsyourdecisionllc:item/regreium_boots"
+    "layer0": "thatsyourdecisionllc:item/regreium_shovel"
   }
 }
