@@ -35,7 +35,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
+import net.wildage.thatsyourmod.event.ModEvents;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(ThatsYourDecisionMod.MODID)
@@ -79,7 +79,7 @@ public class ThatsYourDecisionMod {
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
-
+        NeoForge.EVENT_BUS.register(new ModEvents());
         ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
