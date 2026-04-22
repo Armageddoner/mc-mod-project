@@ -13,7 +13,7 @@ public class ModEvents {
 
         if (!(event.getEntity() instanceof Villager villager)) return;
 
-        if (!villager.getPersistentData().getBoolean("steinlet")) return;
+        if (!villager.getPersistentData().getBoolean("dwarf")) return;
 
         event.getDrops().add(
                 new net.minecraft.world.entity.item.ItemEntity(
