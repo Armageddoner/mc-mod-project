@@ -23,8 +23,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> EPSTEIN_BLOCK = registerBlock("epstein_block", () -> new Block(BlockBehaviour.Properties.of().strength(50f, 6f).requiresCorrectToolForDrops().sound(SoundType.ANVIL)));
     public static final DeferredBlock<Block> REINFORCED_GRINDSTONE = registerBlock("reinforced_grindstone", () -> new ReinforcedGrindstone(BlockBehaviour.Properties.of().strength(5f, 6f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
     public static final DeferredBlock<Block> REINFORCED_ANVIL = registerBlock("reinforced_anvil", () -> new ReinforcedAnvil(BlockBehaviour.Properties.of().strength(6f, 6f).requiresCorrectToolForDrops().sound(SoundType.ANVIL)));
-    public static final DeferredBlock<Block> DIDDIUM_ORE = registerBlock("diddium_ore", () -> new Block(BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
-    public static final DeferredBlock<Block> DEEPSLATE_DIDDIUM_ORE = registerBlock("deepslate_diddium_ore", () -> new Block(BlockBehaviour.Properties.of().strength(4.5f, 6f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
+
+    public static final DeferredBlock<Block> REGREIUM_ORE = registerBlock("regreium_ore", () -> new Block(BlockBehaviour.Properties.of().strength(3f, 6f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
+    public static final DeferredBlock<Block> DEEPSLATE_REGREIUM_ORE = registerBlock("deepslate_regreium_ore", () -> new Block(BlockBehaviour.Properties.of().strength(4.5f, 6f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

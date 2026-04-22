@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "thatsyourdecisionllc:block/diddium_ore"
+    "all": "thatsyourdecisionllc:block/regreium_ore"
   }
 }

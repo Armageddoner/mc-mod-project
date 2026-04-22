@@ -2,10 +2,10 @@
   "type": "minecraft:blasting",
   "category": "misc",
   "ingredient": {
-    "item": "thatsyourdecisionllc:raw_diddium"
+    "item": "thatsyourdecisionllc:regreium_ore"
   },
   "result": {
-    "id": "thatsyourdecisionllc:diddium_ingot"
+    "id": "thatsyourdecisionllc:regreium_ingot"
   },
   "experience": 0.7,
   "cookingtime": 100
