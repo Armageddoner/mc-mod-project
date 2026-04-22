@@ -9,7 +9,7 @@ public class RegreiumBoots {
     public static final DeferredRegister.Items ITEMS =
         DeferredRegister.createItems("thatsyourdecisionllc");
 
-    public static final DeferredItem<ArmorItem> MY_BOOTS = ITEMS.register("regreium_boots",
+    public static final DeferredItem<ArmorItem> REGREIUM_BOOTS = ITEMS.register("regreium_boots",
             () -> new ArmorItem(
                     ModArmorMaterials.REGREIUM,
                     ArmorItem.Type.BOOTS,
