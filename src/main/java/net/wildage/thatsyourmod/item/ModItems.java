@@ -6,6 +6,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.wildage.thatsyourmod.ThatsYourDecisionMod;
+import net.wildage.thatsyourmod.item.custom.RegreiumBootsItem;
 
 public class ModItems {
 
@@ -17,7 +18,12 @@ public class ModItems {
     public static final DeferredItem<Item> REGREIUM_HELMET = ITEMS.register("regreium_helmet", () -> new ArmorItem(Holder.direct(ModArmorMaterials.REGREIUM.value()), ArmorItem.Type.HELMET, new Item.Properties().stacksTo(1)));
     public static final DeferredItem<Item> REGREIUM_CHESTPLATE = ITEMS.register("regreium_chestplate", () -> new ArmorItem(Holder.direct(ModArmorMaterials.REGREIUM.value()), ArmorItem.Type.CHESTPLATE, new Item.Properties().stacksTo(1)));
     public static final DeferredItem<Item> REGREIUM_LEGGINGS = ITEMS.register("regreium_leggings", () -> new ArmorItem(Holder.direct(ModArmorMaterials.REGREIUM.value()), ArmorItem.Type.LEGGINGS, new Item.Properties().stacksTo(1)));
-    public static final DeferredItem<Item> REGREIUM_BOOTS = ITEMS.register("regreium_boots", () -> new ArmorItem(Holder.direct(ModArmorMaterials.REGREIUM.value()), ArmorItem.Type.BOOTS, new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<ArmorItem> REGREIUM_BOOTS = ITEMS.register("regreium_boots",
+            () -> new RegreiumBootsItem(
+                    ModArmorMaterials.REGREIUM,
+                    ArmorItem.Type.BOOTS,
+                    new Item.Properties().stacksTo(1)
+            ));
 
     public static final DeferredItem<Item> REGREIUM_PICKAXE = ITEMS.register("regreium_pickaxe", () -> new PickaxeItem(ModToolTiers.REGREIUM, new Item.Properties()));
     public static final DeferredItem<Item> REGREIUM_SWORD = ITEMS.register("regreium_sword", () -> new SwordItem(ModToolTiers.REGREIUM, new Item.Properties()));

@@ -8,7 +8,6 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDropsEvent;
 import net.wildage.thatsyourmod.item.ModItems;
 import net.neoforged.neoforge.event.entity.living.LivingFallEvent;
-import net.wildage.thatsyourmod.item.RegreiumBoots;
 
 public class ModEvents {
 
@@ -36,7 +35,7 @@ public class ModEvents {
 
         var boots = player.getItemBySlot(EquipmentSlot.FEET);
 
-        if (boots.is(RegreiumBoots.REGREIUM_BOOTS.get())) {
+        if (boots.is(ModItems.REGREIUM_BOOTS.get())) {
 
             float fallDistance = event.getDistance();
 
