@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "thatsyourdecisionllc:dwarvenium"
+    },
+    "A": {
+      "item": "minecraft:apple"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DAD",
+    "DDD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "thatsyourdecisionllc:dwarven_apple"
+  }
+}

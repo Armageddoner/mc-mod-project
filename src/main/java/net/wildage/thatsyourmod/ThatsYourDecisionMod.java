@@ -1,16 +1,17 @@
 package net.wildage.thatsyourmod;
 
 import net.wildage.thatsyourmod.block.ModBlocks;
+import net.wildage.thatsyourmod.events.DwarvenEssenceEvents;
+import net.wildage.thatsyourmod.events.ModEvents;
+import net.wildage.thatsyourmod.events.DwarfEvents;
 import net.wildage.thatsyourmod.item.ModArmorMaterials;
 import net.wildage.thatsyourmod.item.ModCreativeModTabs;
 import net.wildage.thatsyourmod.item.ModItems;
-import net.wildage.thatsyourmod.item.RegreiumBoots;
 import net.wildage.thatsyourmod.menu.ModMenus;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.FoodProperties;
@@ -19,7 +20,6 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
@@ -35,7 +35,6 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(ThatsYourDecisionMod.MODID)
@@ -79,15 +78,17 @@ public class ThatsYourDecisionMod {
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
-
         ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModMenus.register(modEventBus);
         ModArmorMaterials.ARMOR_MATERIALS.register(modEventBus);
-        RegreiumBoots.ITEMS.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
+        NeoForge.EVENT_BUS.register(ModEvents.class);
+        NeoForge.EVENT_BUS.register(DwarfEvents.class);
+        NeoForge.EVENT_BUS.register(DwarvenEssenceEvents.class);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -101,13 +102,15 @@ public class ThatsYourDecisionMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COGITO);
-            event.accept(ModItems.Enkephalin);
+            event.accept(ModItems.ENKEPHALIN);
+            event.accept(ModItems.DWARVEN_APPLE);
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.EPSTEIN_BLOCK);
+            event.accept(ModBlocks.ETHAN_BLOCK);
             event.accept(ModBlocks.REINFORCED_GRINDSTONE);
             event.accept(ModBlocks.REINFORCED_ANVIL);
+            event.accept(ModBlocks.REGREIUM_ORE);
         }
     }
 
