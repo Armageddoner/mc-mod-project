@@ -17,10 +17,10 @@ public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ThatsYourDecisionMod.MODID);
 
     public static final Supplier<CreativeModeTab> THATS_YOUR_BLOCKS_TAB = CREATIVE_MODE_TAB.register("thats_your_blocks_tab", () -> CreativeModeTab.builder()
-            .icon(()-> new ItemStack(ModBlocks.EPSTEIN_BLOCK.get()))
+            .icon(()-> new ItemStack(ModBlocks.ETHAN_BLOCK.get()))
             .title(Component.translatable("creativetab.thatsyourdecisionllc.thats_your_blocks"))
             .displayItems((itemDisplayParameters, output) -> {
-                output.accept(ModBlocks.EPSTEIN_BLOCK);
+                output.accept(ModBlocks.ETHAN_BLOCK);
                 output.accept(ModBlocks.REGREIUM_ORE);
                 output.accept(ModBlocks.DEEPSLATE_REGREIUM_ORE);
             })

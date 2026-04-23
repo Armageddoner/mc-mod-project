@@ -36,7 +36,6 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.wildage.thatsyourmod.events.ModEvents;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(ThatsYourDecisionMod.MODID)
@@ -110,7 +109,7 @@ public class ThatsYourDecisionMod {
         }
 
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.EPSTEIN_BLOCK);
+            event.accept(ModBlocks.ETHAN_BLOCK);
             event.accept(ModBlocks.REINFORCED_GRINDSTONE);
             event.accept(ModBlocks.REINFORCED_ANVIL);
             event.accept(ModBlocks.REGREIUM_ORE);

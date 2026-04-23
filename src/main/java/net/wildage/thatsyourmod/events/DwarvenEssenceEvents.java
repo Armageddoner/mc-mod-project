@@ -39,9 +39,14 @@ public class DwarvenEssenceEvents {
 
             BlockState state = level.getBlockState(pos);
 
-            if (isIronOre(state)) {
+            if (state.is(Blocks.IRON_ORE)) {
                 level.setBlock(pos,
                         ModBlocks.REGREIUM_ORE.get().defaultBlockState(),
+                        3
+                );
+            } else if (state.is(Blocks.DEEPSLATE_IRON_ORE)) {
+                level.setBlock(pos,
+                        ModBlocks.DEEPSLATE_REGREIUM_ORE.get().defaultBlockState(),
                         3
                 );
             }

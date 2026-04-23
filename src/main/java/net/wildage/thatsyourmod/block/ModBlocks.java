@@ -20,7 +20,7 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(ThatsYourDecisionMod.MODID);
 
 
-    public static final DeferredBlock<Block> EPSTEIN_BLOCK = registerBlock("epstein_block", () -> new Block(BlockBehaviour.Properties.of().strength(50f, 6f).requiresCorrectToolForDrops().sound(SoundType.ANVIL)));
+    public static final DeferredBlock<Block> ETHAN_BLOCK = registerBlock("ethan_block", () -> new Block(BlockBehaviour.Properties.of().strength(50f, 6f).requiresCorrectToolForDrops().sound(SoundType.ANVIL)));
     public static final DeferredBlock<Block> REINFORCED_GRINDSTONE = registerBlock("reinforced_grindstone", () -> new ReinforcedGrindstone(BlockBehaviour.Properties.of().strength(5f, 6f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
     public static final DeferredBlock<Block> REINFORCED_ANVIL = registerBlock("reinforced_anvil", () -> new ReinforcedAnvil(BlockBehaviour.Properties.of().strength(6f, 6f).requiresCorrectToolForDrops().sound(SoundType.ANVIL)));
 
